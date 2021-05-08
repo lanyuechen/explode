@@ -10,7 +10,7 @@ function explode(selector, options) {
   container.addEventListener('mousemove', (e) => {
     let rotateY = -90 / rect.width * e.offsetX + 45;
     let rotateX = 90 / rect.height * e.offsetY - 45;
-    node.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg) scale(0.8)`;
+    node.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
   });
 
   node.style.transition = 'none';
